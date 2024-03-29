@@ -3,6 +3,7 @@ package qtriptest;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -17,11 +18,11 @@ import org.testng.annotations.DataProvider;
 
 public class DP {
     // TODO: use correct annotation to connect the Data Provider with your Test Cases
-    @DataProvider(name= "data-provider")//Method m
-    public Object[][] dpMethod() throws IOException {
+    @DataProvider(name= "data-provider")
+    public Object[][] dpMethod(Method m) throws IOException {
         int rowIndex = 0;
         int cellIndex = 0;
-        String sheetname = "TestCase01";
+        String sheetname = m.getName();
         List<List> outputList = new ArrayList<List>();
 
         FileInputStream excelFile = new FileInputStream(new File(

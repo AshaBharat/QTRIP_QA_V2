@@ -1,6 +1,7 @@
 package qtriptest.tests;
 
 import qtriptest.DP;
+import qtriptest.DriverSingleton;
 import qtriptest.pages.HomePage;
 import qtriptest.pages.LoginPage;
 import qtriptest.pages.RegisterPage;
@@ -20,17 +21,13 @@ public class testCase_01 {
    
     @BeforeTest(alwaysRun = true)
     public static void createDriver() throws MalformedURLException{
-        final DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setBrowserName(BrowserType.CHROME);
-        driver = new RemoteWebDriver(new URL("http://localhost:8082/wd/hub"), capabilities);
-        System.out.println("Browser created");
-        driver.manage().window().maximize();
-        System.out.println("Window maximised");
+        DriverSingleton singleton = DriverSingleton.getInstanceOfSingletonBrowserClass();
+        driver = singleton.getDriver();
     }
 
-    @Test(description="Verify User Registration - login - logout", dataProvider= "data-provider" , dataProviderClass = DP.class, priority = 1 , enabled = true)
+    @Test(description="Verify User Registration - login - logout", dataProvider= "data-provider" , dataProviderClass = DP.class, priority = 1 , enabled = true, groups = {"Login Flow"})
     public static void TestCase01(String username, String password) throws InterruptedException{
-        try{
+        //try{
             HomePage home = new HomePage(driver);
             home.navigateToHomePage();
             home.clickRegister();
@@ -55,13 +52,13 @@ public class testCase_01 {
 
             home.clickLogout();
             Thread.sleep(2000);
-            Assert.assertFalse(home.verifyuserloggedin());
+            Assert.assertTrue(home.verifyuserloggedout());
             System.out.println("successfully logged out");
             System.out.println("testcase01 executed successfully");
-        }
-        catch(Exception e){
-            System.out.println("error in testcase01");
-        }
+        //}
+        // catch(Exception e){
+        //     System.out.println("error in testcase01");
+        // }
     }
 
 }
