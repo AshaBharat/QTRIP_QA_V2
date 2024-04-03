@@ -1,6 +1,7 @@
 
 package qtriptest.pages;
 
+import qtriptest.SeleniumWrapper;
 import java.util.List;
 import java.util.NoSuchElementException;
 import org.openqa.selenium.By;
@@ -29,8 +30,9 @@ public class HistoryPage {
     
     public void cancelreservation(String transactionid) throws InterruptedException {
         WebElement cancelbutton = d.findElement(By.xpath("//button[@id='"+ transactionid +"']"));
-        cancelbutton.click();
+        //cancelbutton.click();
         //Thread.sleep(500);
+        SeleniumWrapper.Click(d, cancelbutton);
     }
 
     public boolean verifytransactiondelete(String transactionid) {

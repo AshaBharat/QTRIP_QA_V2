@@ -1,5 +1,6 @@
 package qtriptest.pages;
 
+import qtriptest.SeleniumWrapper;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -22,9 +23,14 @@ public class LoginPage {
         PageFactory.initElements(factory, this);
     }
 
-    public void loginpage(String username, String password){
-        emailtextbox.sendKeys(username);
-        passwordtextbox.sendKeys(password);
-        loginButton.click();
+    public void loginpage(String username, String password) throws InterruptedException{
+        // emailtextbox.sendKeys(username);
+        // passwordtextbox.sendKeys(password);
+        // loginButton.click();
+        SeleniumWrapper.sendKeys(emailtextbox, username);
+        SeleniumWrapper.sendKeys(passwordtextbox, password);
+        SeleniumWrapper.Click(d, loginButton);
+        Thread.sleep(5000);
+        
     }
 }

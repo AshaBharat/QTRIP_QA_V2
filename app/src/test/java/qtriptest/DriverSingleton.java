@@ -18,6 +18,7 @@ public class DriverSingleton {
         driver.manage().window().maximize();
         System.out.println("Window maximised");
     }
+    
     public static DriverSingleton getInstanceOfSingletonBrowserClass() throws MalformedURLException{
         if(instanceOfSingletonBrowserClass == null){
             instanceOfSingletonBrowserClass = new DriverSingleton();

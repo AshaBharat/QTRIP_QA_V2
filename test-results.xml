@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-29T14:46:03 IST" name="Gradle suite" finished-at="2024-03-29T14:51:42 IST" duration-ms="338760">
+  <suite started-at="2024-04-03T15:19:34 IST" name="Gradle suite" finished-at="2024-04-03T15:30:51 IST" duration-ms="676499">
     <groups>
       <group name="Booking and Cancellation Flow">
-        <method signature="testCase_03.TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:qtriptest.tests.testCase_03@1e04fa0a]" name="TestCase03" class="qtriptest.tests.testCase_03"/>
+        <method signature="testCase_03.TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:qtriptest.tests.testCase_03@306e95ec]" name="TestCase03" class="qtriptest.tests.testCase_03"/>
       </group> <!-- Booking and Cancellation Flow -->
       <group name="Reliability Flow">
-        <method signature="testCase_04.TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:qtriptest.tests.testCase_04@2c35e847]" name="TestCase04" class="qtriptest.tests.testCase_04"/>
+        <method signature="testCase_04.TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:qtriptest.tests.testCase_04@52af26ee]" name="TestCase04" class="qtriptest.tests.testCase_04"/>
       </group> <!-- Reliability Flow -->
       <group name="Search and Filter flow">
-        <method signature="testCase_02.TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qtriptest.tests.testCase_02@7c24b813]" name="TestCase02" class="qtriptest.tests.testCase_02"/>
+        <method signature="testCase_02.TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qtriptest.tests.testCase_02@741a8937]" name="TestCase02" class="qtriptest.tests.testCase_02"/>
       </group> <!-- Search and Filter flow -->
       <group name="Login Flow">
-        <method signature="testCase_01.TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@25fb8912]" name="TestCase01" class="qtriptest.tests.testCase_01"/>
+        <method signature="testCase_01.TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@5d7148e2]" name="TestCase01" class="qtriptest.tests.testCase_01"/>
       </group> <!-- Login Flow -->
     </groups>
-    <test started-at="2024-03-29T14:46:03 IST" name="Gradle test" finished-at="2024-03-29T14:51:42 IST" duration-ms="338760">
+    <test started-at="2024-04-03T15:19:34 IST" name="Gradle test" finished-at="2024-04-03T15:30:51 IST" duration-ms="676499">
       <class name="qtriptest.tests.testCase_01">
-        <test-method is-config="true" signature="createDriver()[pri:0, instance:qtriptest.tests.testCase_01@25fb8912]" started-at="2024-03-29T14:46:03 IST" name="createDriver" finished-at="2024-03-29T14:46:06 IST" duration-ms="2342" status="PASS">
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:qtriptest.tests.testCase_01@5d7148e2]" started-at="2024-04-03T15:19:34 IST" name="createDriver" finished-at="2024-04-03T15:19:37 IST" duration-ms="2459" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@25fb8912]" started-at="2024-03-29T14:46:08 IST" name="TestCase01" description="Verify User Registration - login - logout" data-provider="data-provider" finished-at="2024-03-29T14:46:33 IST" duration-ms="25309" status="PASS">
+        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@5d7148e2]" started-at="2024-04-03T15:19:38 IST" name="TestCase01" description="Verify User Registration - login - logout" data-provider="data-provider" finished-at="2024-04-03T15:20:06 IST" duration-ms="27906" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,7 +39,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase01 -->
-        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@25fb8912]" started-at="2024-03-29T14:46:33 IST" name="TestCase01" description="Verify User Registration - login - logout" data-provider="data-provider" finished-at="2024-03-29T14:46:57 IST" duration-ms="24558" status="PASS">
+        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@5d7148e2]" started-at="2024-04-03T15:20:06 IST" name="TestCase01" description="Verify User Registration - login - logout" data-provider="data-provider" finished-at="2024-04-03T15:20:33 IST" duration-ms="26711" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase01 -->
-        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@25fb8912]" started-at="2024-03-29T14:46:57 IST" name="TestCase01" description="Verify User Registration - login - logout" data-provider="data-provider" finished-at="2024-03-29T14:47:23 IST" duration-ms="25080" status="PASS">
+        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@5d7148e2]" started-at="2024-04-03T15:20:33 IST" name="TestCase01" description="Verify User Registration - login - logout" data-provider="data-provider" finished-at="2024-04-03T15:21:00 IST" duration-ms="26600" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,11 +73,11 @@
         </test-method> <!-- TestCase01 -->
       </class> <!-- qtriptest.tests.testCase_01 -->
       <class name="qtriptest.tests.testCase_04">
-        <test-method is-config="true" signature="createDriver()[pri:0, instance:qtriptest.tests.testCase_04@2c35e847]" started-at="2024-03-29T14:46:06 IST" name="createDriver" finished-at="2024-03-29T14:46:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:qtriptest.tests.testCase_04@52af26ee]" started-at="2024-04-03T15:19:37 IST" name="createDriver" finished-at="2024-04-03T15:19:37 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method signature="TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:qtriptest.tests.testCase_04@2c35e847]" started-at="2024-03-29T14:49:21 IST" name="TestCase04" description="Verify that Booking history can be viewed" data-provider="data-provider" finished-at="2024-03-29T14:50:08 IST" duration-ms="46813" status="PASS">
+        <test-method signature="TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:qtriptest.tests.testCase_04@52af26ee]" started-at="2024-04-03T15:25:34 IST" name="TestCase04" description="Verify that Booking history can be viewed" data-provider="data-provider" finished-at="2024-04-03T15:27:19 IST" duration-ms="104657" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -108,7 +108,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase04 -->
-        <test-method signature="TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:qtriptest.tests.testCase_04@2c35e847]" started-at="2024-03-29T14:50:08 IST" name="TestCase04" description="Verify that Booking history can be viewed" data-provider="data-provider" finished-at="2024-03-29T14:50:55 IST" duration-ms="47281" status="PASS">
+        <test-method signature="TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:qtriptest.tests.testCase_04@52af26ee]" started-at="2024-04-03T15:27:19 IST" name="TestCase04" description="Verify that Booking history can be viewed" data-provider="data-provider" finished-at="2024-04-03T15:29:04 IST" duration-ms="105079" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -139,7 +139,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase04 -->
-        <test-method signature="TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:qtriptest.tests.testCase_04@2c35e847]" started-at="2024-03-29T14:50:55 IST" name="TestCase04" description="Verify that Booking history can be viewed" data-provider="data-provider" finished-at="2024-03-29T14:51:42 IST" duration-ms="46702" status="PASS">
+        <test-method signature="TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:qtriptest.tests.testCase_04@52af26ee]" started-at="2024-04-03T15:29:04 IST" name="TestCase04" description="Verify that Booking history can be viewed" data-provider="data-provider" finished-at="2024-04-03T15:30:50 IST" duration-ms="105944" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -170,17 +170,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase04 -->
-        <test-method is-config="true" signature="QuitBrowser()[pri:0, instance:qtriptest.tests.testCase_04@2c35e847]" started-at="2024-03-29T14:51:42 IST" name="QuitBrowser" finished-at="2024-03-29T14:51:42 IST" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="QuitBrowser()[pri:0, instance:qtriptest.tests.testCase_04@52af26ee]" started-at="2024-04-03T15:30:50 IST" name="QuitBrowser" finished-at="2024-04-03T15:30:51 IST" duration-ms="609" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QuitBrowser -->
       </class> <!-- qtriptest.tests.testCase_04 -->
       <class name="qtriptest.tests.testCase_03">
-        <test-method is-config="true" signature="createDriver()[pri:0, instance:qtriptest.tests.testCase_03@1e04fa0a]" started-at="2024-03-29T14:46:06 IST" name="createDriver" finished-at="2024-03-29T14:46:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:qtriptest.tests.testCase_03@306e95ec]" started-at="2024-04-03T15:19:37 IST" name="createDriver" finished-at="2024-04-03T15:19:37 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method signature="TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:qtriptest.tests.testCase_03@1e04fa0a]" started-at="2024-03-29T14:47:59 IST" name="TestCase03" description="Verify that adventure Booking and cancellation works fine!" data-provider="data-provider" finished-at="2024-03-29T14:48:23 IST" duration-ms="24038" status="PASS">
+        <test-method signature="TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:qtriptest.tests.testCase_03@306e95ec]" started-at="2024-04-03T15:22:10 IST" name="TestCase03" description="Verify that adventure Booking and cancellation works fine!" data-provider="data-provider" finished-at="2024-04-03T15:23:18 IST" duration-ms="68293" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -221,7 +221,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase03 -->
-        <test-method signature="TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:qtriptest.tests.testCase_03@1e04fa0a]" started-at="2024-03-29T14:48:23 IST" name="TestCase03" description="Verify that adventure Booking and cancellation works fine!" data-provider="data-provider" finished-at="2024-03-29T14:48:47 IST" duration-ms="23838" status="PASS">
+        <test-method signature="TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:qtriptest.tests.testCase_03@306e95ec]" started-at="2024-04-03T15:23:18 IST" name="TestCase03" description="Verify that adventure Booking and cancellation works fine!" data-provider="data-provider" finished-at="2024-04-03T15:24:26 IST" duration-ms="68283" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -262,7 +262,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase03 -->
-        <test-method signature="TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:qtriptest.tests.testCase_03@1e04fa0a]" started-at="2024-03-29T14:48:47 IST" name="TestCase03" description="Verify that adventure Booking and cancellation works fine!" data-provider="data-provider" finished-at="2024-03-29T14:49:21 IST" duration-ms="34058" status="PASS">
+        <test-method signature="TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:qtriptest.tests.testCase_03@306e95ec]" started-at="2024-04-03T15:24:26 IST" name="TestCase03" description="Verify that adventure Booking and cancellation works fine!" data-provider="data-provider" finished-at="2024-04-03T15:25:34 IST" duration-ms="68110" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -305,11 +305,11 @@
         </test-method> <!-- TestCase03 -->
       </class> <!-- qtriptest.tests.testCase_03 -->
       <class name="qtriptest.tests.testCase_02">
-        <test-method is-config="true" signature="createDriver()[pri:0, instance:qtriptest.tests.testCase_02@7c24b813]" started-at="2024-03-29T14:46:06 IST" name="createDriver" finished-at="2024-03-29T14:46:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:qtriptest.tests.testCase_02@741a8937]" started-at="2024-04-03T15:19:37 IST" name="createDriver" finished-at="2024-04-03T15:19:37 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qtriptest.tests.testCase_02@7c24b813]" started-at="2024-03-29T14:47:23 IST" name="TestCase02" description="Verify that search and filter work fine" data-provider="data-provider" finished-at="2024-03-29T14:47:35 IST" duration-ms="12237" status="PASS">
+        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qtriptest.tests.testCase_02@741a8937]" started-at="2024-04-03T15:21:00 IST" name="TestCase02" description="Verify that search and filter work fine" data-provider="data-provider" finished-at="2024-04-03T15:21:23 IST" duration-ms="23306" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -340,7 +340,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase02 -->
-        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qtriptest.tests.testCase_02@7c24b813]" started-at="2024-03-29T14:47:35 IST" name="TestCase02" description="Verify that search and filter work fine" data-provider="data-provider" finished-at="2024-03-29T14:47:47 IST" duration-ms="11905" status="PASS">
+        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qtriptest.tests.testCase_02@741a8937]" started-at="2024-04-03T15:21:23 IST" name="TestCase02" description="Verify that search and filter work fine" data-provider="data-provider" finished-at="2024-04-03T15:21:47 IST" duration-ms="23720" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -371,7 +371,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase02 -->
-        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qtriptest.tests.testCase_02@7c24b813]" started-at="2024-03-29T14:47:47 IST" name="TestCase02" description="Verify that search and filter work fine" data-provider="data-provider" finished-at="2024-03-29T14:47:59 IST" duration-ms="12158" status="PASS">
+        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qtriptest.tests.testCase_02@741a8937]" started-at="2024-04-03T15:21:47 IST" name="TestCase02" description="Verify that search and filter work fine" data-provider="data-provider" finished-at="2024-04-03T15:22:09 IST" duration-ms="22661" status="PASS">
           <params>
             <param index="0">
               <value>

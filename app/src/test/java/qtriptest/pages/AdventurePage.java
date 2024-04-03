@@ -1,5 +1,6 @@
 package qtriptest.pages;
 
+import qtriptest.SeleniumWrapper;
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -11,7 +12,7 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class AdventurePage {
-    static RemoteWebDriver d;
+    public static RemoteWebDriver d;
 
     @FindBy(id = "duration-select")
     private WebElement hourDropdown;
@@ -81,16 +82,19 @@ public class AdventurePage {
         Thread.sleep(2000);
     }
 
-    public void clearcategoryfilter() {
-        clearcategoryfilter.click();
+    public void clearcategoryfilter() throws InterruptedException {
+        //clearcategoryfilter.click();
+        SeleniumWrapper.Click(d,clearcategoryfilter);
     }
 
-    public void clearhourfilter() {
-        clearhourfilter.click();
+    public void clearhourfilter() throws InterruptedException {
+        //clearhourfilter.click();
+        SeleniumWrapper.Click(d,clearhourfilter);
     }
 
-    public void clearadventurefilter() {
-        clearadventurefilter.click();
+    public void clearadventurefilter() throws InterruptedException {
+        //clearadventurefilter.click();
+        SeleniumWrapper.Click(d,clearadventurefilter);
     }
 
     public int noOfFilterResults() {
@@ -106,16 +110,11 @@ public class AdventurePage {
         Thread.sleep(1000);
     }
 
-    public boolean bookadventure(String guestname, String date, String count) {
-        boolean status = false;
-        
-        return status;
-    }
-
     public boolean selectadventure(String adventurevalue) throws InterruptedException {
         boolean status = false;
         WebElement selectadventure = d.findElement(By.xpath("//h5[text()='"+ adventurevalue +"']"));
-        selectadventure.click();
+        //selectadventure.click();
+        SeleniumWrapper.Click(d, selectadventure);
         Thread.sleep(1000);
         if(d.getCurrentUrl().contains("/pages/adventures/detail/")){
             status = true;

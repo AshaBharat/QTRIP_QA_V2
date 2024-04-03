@@ -1,5 +1,6 @@
 package qtriptest.pages;
 
+import qtriptest.SeleniumWrapper;
 import java.util.UUID;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -27,7 +28,7 @@ public class RegisterPage {
         PageFactory.initElements(factory, this);
     }
 
-    public void registerUser(String username, String password, String confirmPassword, Boolean makeuserNameDynamic) throws InterruptedException{
+    public boolean registerUser(String username, String password, String confirmPassword, Boolean makeuserNameDynamic) throws InterruptedException{
         String emailid;
         if(makeuserNameDynamic){
             emailid = username.split("@")[0] + UUID.randomUUID().toString() + "@" + username.split("@")[1];
@@ -35,11 +36,17 @@ public class RegisterPage {
             emailid = username;       
         }
         lastgeneratedemailid = emailid;
-        emailtextbox.sendKeys(emailid);
-        passwordtextbox.sendKeys(password);
-        confirmpasswordtextbox.sendKeys(confirmPassword);
-        registerNowButton.click();
+        // emailtextbox.sendKeys(emailid);
+        // passwordtextbox.sendKeys(password);
+        // confirmpasswordtextbox.sendKeys(confirmPassword);
+        // registerNowButton.click();
+        // Thread.sleep(5000);
+        SeleniumWrapper.sendKeys(emailtextbox, emailid);
+        SeleniumWrapper.sendKeys(passwordtextbox, password);
+        SeleniumWrapper.sendKeys(confirmpasswordtextbox, confirmPassword);
+        SeleniumWrapper.Click(d, registerNowButton);
         Thread.sleep(5000);
+        return d.getCurrentUrl().contains("login");
     }
 
 }

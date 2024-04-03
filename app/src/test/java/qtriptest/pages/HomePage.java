@@ -1,5 +1,6 @@
 package qtriptest.pages;
 
+import qtriptest.SeleniumWrapper;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -11,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage {
-    RemoteWebDriver d;
+    public static RemoteWebDriver d;
     public String url ="https://qtripdynamic-qa-frontend.vercel.app";
     Actions act;
     @FindBy(xpath = "//a[text()='Register']")
@@ -33,13 +34,18 @@ public class HomePage {
         AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(d, 10);
         PageFactory.initElements(factory, this);
     }
-    public void navigateToHomePage(){
-        if(!(d.getCurrentUrl().equals(url))){
-            d.get(url);
-        }
+    public boolean navigateToHomePage(){
+        // if(!(d.getCurrentUrl().equals(url))){
+        //     d.get(url);
+        // }
+        SeleniumWrapper.navigate(d, url);
+        return d.getCurrentUrl().contains(url);
     }
-    public void clickRegister(){
-        registerButton.click();
+    public boolean clickRegister() throws InterruptedException{
+        // registerButton.click();
+        SeleniumWrapper.Click(d, registerButton);
+        Thread.sleep(3000);
+        return d.getCurrentUrl().contains("pages/register");
     }
     
     public boolean verifyuserloggedin(){
@@ -49,10 +55,11 @@ public class HomePage {
         return false;
     }
     public void clickLogout() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(d,10);
-        wait.until(ExpectedConditions.elementToBeClickable(logoutButton));
-        logoutButton.click();
-        Thread.sleep(500);
+        // WebDriverWait wait = new WebDriverWait(d,10);
+        // wait.until(ExpectedConditions.elementToBeClickable(logoutButton));
+        // logoutButton.click();
+        // Thread.sleep(500);
+        SeleniumWrapper.Click(d,logoutButton);
     }
 
     public void searchcity(String cityname) throws InterruptedException{
@@ -80,7 +87,8 @@ public class HomePage {
     public boolean selectcity(String cityname) throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(d,10);
         wait.until(ExpectedConditions.visibilityOf(searchcityoption));
-        searchcityoption.click();
+        // searchcityoption.click();
+        SeleniumWrapper.Click(d, searchcityoption);
         Thread.sleep(1000);
         if(d.getCurrentUrl().endsWith(cityname.toLowerCase())){
             return true;
@@ -95,7 +103,8 @@ public class HomePage {
     }
     public boolean clickhistorypage() throws InterruptedException {
         boolean status=false;
-        reservationbutton.click();
+        //reservationbutton.click();
+        SeleniumWrapper.Click(d, reservationbutton);
         Thread.sleep(4000);
         if(d.getCurrentUrl().contains("pages/adventures/reservations")){
             status = true;

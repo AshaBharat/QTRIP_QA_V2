@@ -1,5 +1,6 @@
 package qtriptest.pages;
 
+import qtriptest.SeleniumWrapper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -42,10 +43,12 @@ public class AdventureDetailsPage {
         act.sendKeys(nametextbox,guestname).perform();
         datetextbox.clear();
         act.sendKeys(datetextbox, date).perform();
-        persontextbox.clear();
-        persontextbox.sendKeys(count);
+        // persontextbox.clear();
+        // persontextbox.sendKeys(count);
         //act.sendKeys(persontextbox, ).perform();
-        reservebutton.click();
+        //reservebutton.click();
+        SeleniumWrapper.sendKeys(persontextbox, count);
+        SeleniumWrapper.Click(d, reservebutton);
         Thread.sleep(4000);
         if(bookingsuccessalert.isDisplayed()) {
             status = true;
@@ -56,7 +59,8 @@ public class AdventureDetailsPage {
 
     public boolean clickhistorypage() throws InterruptedException{
         boolean status=false;
-        reservationbutton.click();
+        //reservationbutton.click();
+        SeleniumWrapper.Click(d, reservationbutton);
         Thread.sleep(4000);
         if(d.getCurrentUrl().contains("pages/adventures/reservations")){
             status = true;
